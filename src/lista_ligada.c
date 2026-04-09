@@ -33,12 +33,19 @@ bool lista_insertar_fin(DLista *l, void *info, size_t size){
     return true;
 }
 
+int lista_num_nodos(DLista *l){
+    int i=0;
+    for(Nodo *tmp = l->head; tmp !=NULL; tmp = tmp->sig, i++);
+}
+
 bool lista_insertar_x_pos(DLista *l, int pos, void *info, size_t s){
     if (!l) return false;
     if (lista_es_vacia(l)) return lista_insertar_vacia (l, info, s);
     if (pos == 0) return lista_insertar_inicio (l, info, s);
     if (pos == lista) //PENDIENTE
     if (pos >= 1 && pos <= (lista_num_nodos(l)-1)){
-        Nodo* nuevo = 
+        Nodo* nuevo = nodo_crear(info,s);
+        Nodo *tmp = l->head;
+
     }
 }

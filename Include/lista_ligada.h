@@ -17,5 +17,5 @@ bool lista_insertar_vacia(DLista *l, void *info, size_t size);
 bool lista_insertar_inicio(DLista *l, void *info, size_t size);
 bool lista_insertar_fin(DLista *l, void *info, size_t size);
 bool lista_insertar_x_pos(DLista *l, int pos, void *info, size_t s);
-
+int lista_num_nodos(Dlista *l);
 #endif
